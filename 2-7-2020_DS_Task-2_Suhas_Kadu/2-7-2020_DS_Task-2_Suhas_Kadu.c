@@ -11,8 +11,8 @@ int pop(int top)
 {
     if(top==-1)
     {
-        printf("\nNot Balanced");
-        exit(0);
+        printf("\n");
+        
     }
     else
     {
@@ -49,7 +49,19 @@ int main()
         }
         else if(arr[i]==')')
         {
+            if(arr[i]==')')
+            {
+            if(arr[i]==')')
+            {
             top=pop(top);
+            }
+            else
+            {
+            printf("\nNot Balanced");
+             break;
+            }
+            }
+            
         }
         i++;
     }
