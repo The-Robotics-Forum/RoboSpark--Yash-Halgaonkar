@@ -18,12 +18,11 @@ typedef struct Queue
 
 Student enqueue(Queue *q,Student s1)
 {
-       if(s1.roll%2==0)
-       {
-            q->s1[q->rear].roll=s1.roll;
-            strcpy(q->s1[q->rear].name,s1.name);
-           return q->s1[q->rear++];
-}
+
+        q->s1[q->rear].roll=s1.roll;
+        strcpy(q->s1[q->rear].name,s1.name);
+        return q->s1[q->rear++];
+
     
 }
 

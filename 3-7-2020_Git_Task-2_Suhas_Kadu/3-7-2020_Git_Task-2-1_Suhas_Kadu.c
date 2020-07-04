@@ -50,8 +50,8 @@ int main()
     n6->left=n3;
     n6->right=n7;
     n3->left=n1;
-    n3->left=n4;
-    n4->left=n5;
+    n3->right=n4;
+    n4->right=n5;
     
     printf("Postorder\n");
     postorder(n10);
