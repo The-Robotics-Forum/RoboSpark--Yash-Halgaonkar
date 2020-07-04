@@ -4,4 +4,3 @@ Repo for task submission for
 2. Yash Kurkute
 3. Kailash Agarwal
 
-This branch is for Suhas Kadu.
