@@ -19,6 +19,9 @@ class String
         void display();
         String operator+(string s);
         String operator*(int n);
+        friend istream& operator >> (istream&cin ,String &s);
+        friend ostream& operator >> (ostream&cout ,String &s);
+       
     
 };
 
@@ -46,6 +49,26 @@ String String::operator*(int n)
 }
 
 
+
+istream& operator>>(istream &cin, String &s)
+{
+    cout<<"Enter the String";
+    cin>>s.arr;
+    
+    return cin;
+}
+
+
+ostream& operator<<(ostream &cout, String &s)
+{
+    cout<<"String";
+    cout<<s.arr<<endl;
+    
+    return cout;
+}
+
+
+
 int main()
 {
     String s1("SOUL");
@@ -65,5 +88,12 @@ int main()
     s1=s1+"MORTAL";
     s1.display();
    
+    
+    cout<<endl;
+    cin>>s1;
+    s1=s1*2;  //overloading
+    cout<<s1;
+   
+    
     return 0;
 }
