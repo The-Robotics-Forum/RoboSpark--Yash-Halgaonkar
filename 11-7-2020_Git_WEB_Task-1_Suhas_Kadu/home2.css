@@ -1,0 +1,91 @@
+
+.row {
+	display:flex;
+	padding:5px;
+}
+
+.column {
+	flex:40%;
+	padding:10px;
+}
+
+
+
+.heading img {
+	display:block;
+	width:35%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:1%;
+	text-align:center;
+	border-radius:50%;
+		
+}
+
+
+
+h2 {
+	font-family:Serif;
+	font-size:30px;
+}
+
+
+.heading h1 {
+	font-family:Serif,Sans-Serif;
+	font-size:45px;
+	margin-bottom:-1%;
+	padding:0 0 5px 0;
+	
+}
+
+
+#about-section  p {
+	font-family:Sans-Serif;
+	font-size:20px;
+	font-style:normal;
+	text-align:justify;
+	
+}
+
+.education
+{
+	font-family:Sans-Serif;
+	font-size:20px;
+	font-style:normal;
+	text-align:justify;	
+	margin-left:20px;
+	padding:5px;
+}
+
+#projects
+{
+	margin-left:20px;
+	padding:5px;
+}
+
+#projects ul li a
+{
+	font-family:Sans-Serif;
+	font-size:20px;
+	font-style:normal;
+	text-align:justify;		
+}
+
+body
+{
+	background-color:#ccebff;
+}
+
+
+a {
+	text-decoration:none;
+}
+
+a:hover {
+	color:darkblue;
+	transition:0.4s;
+	cursor:pointer;
+
+}
+
+
