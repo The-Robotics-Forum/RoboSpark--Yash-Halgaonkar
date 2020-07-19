@@ -14,19 +14,20 @@ int pop()
 {
     if(top==-1)
     {
-        printf("Brackets Not Balanced");
-        exit(0);
+        return 0;
     }
     else
        return --top;
     
 }
-
+int isempty()
+{
+    return(top==-1);
+}
 void check_top()
 {
     if (top==-1)
         printf("Brackets Balanced");
-       
     else
         printf("Brackets Not Balanced");
 }
@@ -48,7 +49,8 @@ int main()
             {
                 if( s[i]== ')')
             {
-                    top = pop();
+                isempty();
+                top = pop();
             }
                 else
                 {
